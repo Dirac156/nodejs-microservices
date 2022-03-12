@@ -1,0 +1,37 @@
+{
+  "name": "Uploader",
+  "version": "1.0.0",
+  "description": "File Upload Microservice",
+  "main": "./src/app.js",
+  "scripts": {
+    "start": "node ./src/app.js",
+    "dev": "nodemon --exec babel-node ./src/app.js",
+    "build": "babel ./src/app.js --out-file index.js"
+  },
+  "keywords": [
+    "Files"
+  ],
+  "author": "Benson Murimi",
+  "license": "ISC",
+  "dependencies": {
+    "@babel/node": "^7.12.13",
+    "aws-sdk": "^2.841.0",
+    "axios": "^0.19.0",
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.19.0",
+    "cheerio": "^1.0.0-rc.3",
+    "core-util-is": "^1.0.2",
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "multer": "^1.4.2",
+    "multer-s3": "^2.9.0",
+    "mysql2": "^2.2.5",
+    "sequelize": "^6.5.0"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.12.16",
+    "@babel/core": "^7.12.16",
+    "@babel/preset-env": "^7.12.16"
+  }
+}
