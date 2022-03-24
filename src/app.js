@@ -8,11 +8,12 @@ const routes  = require('./routes');
 dotenv.config();
 
 const app = express();
-const port = process.env.PORT || 80;
+const port = process.env.PORT || 8080;
 
-app.use(cors());
 app.use(bodyParser.json({limit: '50mb', extended: true}));
 app.use(bodyParser.urlencoded({limit: '50mb', extended: true }));
+app.use(cors());
+
 
 app.use('/api/v1', routes);
 
