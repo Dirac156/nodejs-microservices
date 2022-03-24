@@ -2,7 +2,6 @@ const express  = require('express');
 const dotenv  = require('dotenv');
 const cors = require('cors');
 const axios = require('axios');
-var bodyParser = require('body-parser');
 const routes  = require('./routes');
 
 dotenv.config();
@@ -10,8 +9,8 @@ dotenv.config();
 const app = express();
 const port = process.env.PORT || 8080;
 
-app.use(bodyParser.json({limit: '50mb', extended: true}));
-app.use(bodyParser.urlencoded({limit: '50mb', extended: true }));
+app.use(express.json());
+app.use(express.urlencoded({extended: true }));
 app.use(cors());
 
 
