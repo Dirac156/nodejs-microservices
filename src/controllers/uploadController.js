@@ -35,7 +35,7 @@ const send2db = (filename, link) => {
   });
 };
 
-const getFiles = () => {
+const getFiles = async() => {
   const data = await File.FindAll();
 
   return data;
