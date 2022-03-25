@@ -8,7 +8,7 @@ dotenv.config();
 
 const { File } = db;
 
-const bucketName = 'dirac-fiona-achille-upload-files-v2';
+const bucketName = 'alugroup9.com';
 
 const s3 = new aws.S3({
   accessKeyId: process.env.AWS_ACCESS_ID,
